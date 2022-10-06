@@ -1,0 +1,14 @@
+title Creating a new note on the SPA version
+
+User->Browser: Submits a new note
+Browser->Server: HTTP POST /new_note/spa
+Server->Browser: HTTP 201 Response. Post created
+Note over Server:
+The note is saved on the server
+and a message is sent to the browser
+to indicate success
+end note
+Note over Browser:
+The event listener adds the note to the
+existing notes
+end note
