@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div>
         <Display counter={counter} />
-        <Button text='plus' onClick={increaseByOne} />
+        <Button onClick={increaseByOne} text='plus'  />
         <Button onClick={setToZero} text='zero' />
         <Button onClick={decreaseByOne} text='minus' />
     </div>
