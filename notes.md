@@ -1,6 +1,6 @@
 # Current Work
-https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14
-Working on exercises 1.12 to 1.14
+https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5
+2.6
 
 # Complete Exercises
 0.1
@@ -18,6 +18,11 @@ Working on exercises 1.12 to 1.14
 1.12
 1.13
 1.14
+2.1
+2.2
+2.3
+2.4
+2.5
 
 # In Progress Exercises
-1.6 to 1.14
+none
