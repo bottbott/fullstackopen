@@ -1,6 +1,7 @@
 # Current Work
 https://fullstackopen.com/en/part2/forms
-2.6
+Finished main instructions in Part2b
+Next step is exercises
 
 # Complete Exercises
 0.1
