@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Filter from './components/Filter'
+import PersonForm from './components/PersonForm'
+import Persons from './components/Persons'
 
 const App = () => {
   const [persons, setPersons] = useState([
@@ -17,6 +20,7 @@ const App = () => {
       name: newName,
       number: newNumber
     }
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
     if (persons.find(person => person.name === newName)) {
       alert(`${newName} is already added to the phonebook`)
     }
@@ -37,29 +41,17 @@ const App = () => {
   }
 
   const handleNewSearchChange = (event) => {
-    setNewSearch(event.target.value)
+    setNewSearch(event.target.value.toLowerCase())
   }
 
   return (
     <div>
       <h2>Phonebook</h2>
-      <div>
-        filter shown with <input value={newSearch} onChange={handleNewSearchChange}></input>
-      </div>
+      <Filter value={newSearch} onChange={handleNewSearchChange}/>
       <h2>add a new</h2>
-      <form onSubmit={addName}>
-        <div>
-          name: <input value={newName} onChange={handleNameChange}/>
-        </div>
-        <div>
-          number: <input value={newNumber} onChange={handleNumberChange}/>
-        </div>
-        <div>
-          <button type="submit">add</button>
-        </div>
-      </form>
+      <PersonForm onSubmit={addName} nameValue={newName} nameChange={handleNameChange} nameNumber={newNumber} numberChange={handleNumberChange}/>
       <h2>Numbers</h2>
-      {persons.filter((person) => person.name.toLowerCase().includes(newSearch)).map(person => <p key={person.name}>{person.name} {person.number}</p>)}
+      <Persons persons={persons} newSearch={newSearch}/>
     </div>
   )
 }
