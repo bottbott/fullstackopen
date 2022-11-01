@@ -1,6 +1,6 @@
 # Current Work
-https://fullstackopen.com/en/part2/forms
-Finished main instructions and exercises in Part2b
+https://fullstackopen.com/en/part2/getting_data_from_server
+Finished some main instructions. working on Effect-hooks next. 
 Next step is Part 2c
 
 # Complete Exercises
