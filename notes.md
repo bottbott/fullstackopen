@@ -1,7 +1,7 @@
 # Current Work
 https://fullstackopen.com/en/part2/getting_data_from_server
 Finished some main instructions. working on Effect-hooks next. 
-Next step is exercises 2.11 - 2.14
+Next step is exercises 2.13 - 2.14
 
 # Complete Exercises
 0.1
@@ -31,4 +31,4 @@ Next step is exercises 2.11 - 2.14
 2.10
 
 # In Progress Exercises
-2.11
+2.13
